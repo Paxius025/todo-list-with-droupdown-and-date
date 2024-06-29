@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly To-Do List</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./img/checklist.png">
+</head>
+<body>
+    <header>
+        <img src="./img/checklist.png" alt="checklist" class="check-list">
+        <h1>WEEKLY AGENDA</h1>
+        <form id="todoForm" class="submit-box">
+            <select name="day" id="days">
+                <option value="chooseDay" disabled selected>DAYS</option>
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+                <option value="Saturday">Saturday</option>
+                <option value="Sunday">Sunday</option>
+             </select>
+             <input type="text" placeholder="Write your task in here!" id='user-input'>
+             <button type="submit">ADD!</button>
+        </form>
+    </header>
+    
+    <section>
+            <div class="day-in-week">
+                <h2>Monday</h2>
+                    <ul id="monday">
+                        <!-- <li>Lorem ipsum dolor wepa</li> -->
+                    </ul>    
+            </div> 
+
+            <div class="day-in-week">
+                <h2>Tuesday</h2>
+                    <ul id="tuesday">
+                        <!-- <li>Lorem ipsum dolor wepa</li> -->
+                    </ul>
+            </div> 
+            <div class="day-in-week">
+                <h2>Wednesday</h2>
+                    <ul id="wednesday">
+                        <!-- <li>Lorem ipsum dolor wepa</li> -->
+                    </ul>
+            </div> 
+            <div class="day-in-week thursday">
+                <h2>Thursday</h2>
+                    <ul id="thursday">
+                        <!-- <li>Lorem ipsum dolor wepa</li> -->
+                    </ul>
+            </div> 
+            <div class="day-in-week friday">
+                <h2>Friday</h2>
+                    <ul id="friday">
+                        <!-- <li>Lorem ipsum dolor wepa</li> -->
+                    </ul>
+            </div> 
+            <div class="day-in-week">
+                <h2>Saturday</h2>
+                    <ul id="saturday">
+                        <!-- <li>Lorem ipsum dolor wepa</li>
+                        <li>Lorem ipsum dolor wepa</li> -->
+                    </ul>
+            </div> 
+            <div class="day-in-week sunday">
+                <h2>Sunday</h2>
+                    <ul id="sunday">
+                        <!-- <li>Lorem ipsum dolor wepa</li> -->
+                    </ul>
+            </div> 
+            
+    </section>
+    <script src="./index.js"></script>
+</body>
+</html>
